@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Reprodução de Áudio</title>
+  <style>
+    .letra {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>luqsy</h1>
+    <img src="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAna6s7BEyX2ApFqc5KOTbog" alt="">
+    <div class="audio">
+      <audio id="audioPlayer" controls>
+        <source src="/musica/Volta_Meu_Amigo_Lucx.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+      <div class="letra" id="letra">
+        <p>
+          <strong>[Verse]</strong>
+          Meu amigo luqsy, por que você não volta a editar?
+          Seu PC tá mais velho que velho, deixa de frescar
+          Você é talentoso na arte de só achar que é
+          Volta, meu amigo luqsy, o mundo espera por você (oh-yeah)
+
+          <br><br>
+          <strong>[Chorus]</strong>
+          Volta, meu amigo luqsy, não deixe a arte perecer
+          As letras esperam por você, as batidas a te envolver
+          Volta, meu amigo luqsy, mostre o que você tem
+          Sua alma transborda talento, volte a ser quem você é
+          (oh-yeah, oh-yeah)
+        </p>
+        <a href="https://www.youtube.com/@lucxszyedit/videos">volta meu amigo luqsy</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('audioPlayer').addEventListener('play', function () {
+      document.getElementById('letra').style.display = 'block';
+    });
+  </script>
+</body>
+
+</html>
